@@ -56,7 +56,7 @@ const Searchbar = () => {
           value={searchPrompt}
           onChange={(e) => setsearchPrompt(e.target.value)}
         />
-        <button type='submit' className='searchbar-btn' disabled={searchPrompt === ''}> 
+        <button type='submit' className='searchbar-btn' disabled={searchPrompt === ''} > 
           {isLoading ? 'Searching...' : 'Search'} 
         </button>
     </form>
@@ -64,3 +64,6 @@ const Searchbar = () => {
 }
 
 export default Searchbar
+
+
+//
