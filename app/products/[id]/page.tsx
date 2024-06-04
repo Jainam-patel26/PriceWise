@@ -20,7 +20,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
   //const similarProducts = await getSimilarProducts(id);
 
   return (
-    <div className="product-container">
+    <div className="product-container ">
       <div className="flex gap-28 xl:flex-row flex-col">
         <div className="product-image">
           <Image 
