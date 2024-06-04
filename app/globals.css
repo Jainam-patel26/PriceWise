@@ -22,7 +22,7 @@ body {
 
 @layer utilities {
   .btn {
-    @apply py-4 px-4 hover:bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
+    @apply py-4 px-4 hover:bg-opacity-70 bg-black rounded-[30px] text-white text-lg font-semibold;
   }
 
   .head-text {
