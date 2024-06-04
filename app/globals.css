@@ -22,7 +22,7 @@ body {
 
 @layer utilities {
   .btn {
-    @apply py-4 px-4 bg-secondary hover: bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
+    @apply py-4 px-4 hover:bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
   }
 
   .head-text {
@@ -71,7 +71,7 @@ body {
   }
 
   .product-image {
-    @apply flex-grow xl: max-w-[50%] max-w-full py-16 border border-[#CDDBFF] rounded-[17px];
+    @apply flex-grow xl:max-w-[50%] max-w-full py-16 border border-[#CDDBFF] rounded-[17px];
   }
 
   .product-info {
@@ -79,7 +79,7 @@ body {
   }
 
   .product-hearts {
-    @apply flex items-center gap-2 px-3 py-2 bg-[#FFF0F0] rounded-10;
+    @apply flex items-center gap-2 px-3 py-2 bg-[#FFF0F0];
   }
 
   .product-stars {
@@ -87,7 +87,7 @@ body {
   }
 
   .product-reviews {
-    @apply flex items-center gap-2 px-3 py-2 bg-white-200 rounded-[27px];
+    @apply flex items-center gap-2 px-3 py-2 rounded-[27px];
   }
 
   /* MODAL */
