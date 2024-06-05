@@ -39,7 +39,7 @@ const Modal = ({ productId }: Props) => {
         <Dialog as="div" onClose={closeModal} className="dialog-container">
           <div className="min-h-screen px-4 text-center">
             <Transition.Child
-              as="div"
+              as={Fragment}
               enter="ease-out duration-300"
               enterFrom="opacity-0"
               enterTo="opacity-100"
@@ -47,7 +47,7 @@ const Modal = ({ productId }: Props) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
+              <Dialog.Overlay className="fixed inset-0" /> 
             </Transition.Child>
 
             <span
@@ -56,7 +56,7 @@ const Modal = ({ productId }: Props) => {
             />
             
             <Transition.Child
-              as="div"
+              as={Fragment}
               enter="ease-out duration-300"
               enterFrom="opacity-0 scale-95"
               enterTo="opacity-100 scale-100"
@@ -64,7 +64,7 @@ const Modal = ({ productId }: Props) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="dialog-content inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+              <div className="dialog-content">
                 <div className="flex flex-col">
                   <div className="flex justify-between">
                     <div className="p-3 border border-gray-200 rounded-10">
@@ -133,4 +133,4 @@ const Modal = ({ productId }: Props) => {
   )
 }
 
-export default Modal;
+export default Modal
